@@ -13,14 +13,33 @@ class _CounterAppState extends State<CounterApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer:Drawer(
+        child: Column(
+          children:[
+            ListTile(
+             
+            )
+          ]
+        ),
+      ),
       body: SafeArea(child: Center(
         child: Container(
           decoration:BoxDecoration(color: Colors.teal),
           child: Column(
-
             mainAxisAlignment: MainAxisAlignment.center,
                children: [
-                 Text("$result", style:TextStyle(fontSize: 30.0,fontWeight:FontWeight.w800 )),
+                 SizedBox(
+                   height: 100.0,
+                   width: 100.0,
+                   child: Card(
+                     color: Colors.white,
+                       child: Center(
+                         child: Text("$result",
+                             style:TextStyle(
+                                 fontSize: 30.0,
+                                 fontWeight:FontWeight.w800 )),
+                       )),
+                 ),
                  SizedBox(height: 30.0,),
                  SizedBox(
                    height:60,
