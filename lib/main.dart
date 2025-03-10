@@ -1,5 +1,6 @@
 import 'package:azad_sir/calculator.dart';
 import 'package:azad_sir/counter_app.dart';
+import 'package:azad_sir/demo_page.dart';
 import 'package:azad_sir/language.dart';
 import 'package:azad_sir/popup_buttons.dart';
 import 'package:azad_sir/todo_page.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       translations: AppTranslations(),
       locale: Locale('en', 'US'),
       fallbackLocale: Locale('en', 'US'),
-      home: LanguageSelectionScreen(),
+      home: LifelineCardScreen(),
     );
   }
 }
